@@ -1,0 +1,18 @@
+{
+  "name": "Dica Rápida",
+  "description": "Uma dica para o vestibular a cada vez que você abre uma nova aba.",
+  "version": "0.1",
+  "incognito": "split",
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "permissions": [
+    "storage"
+  ],
+  "manifest_version": 2
+}
