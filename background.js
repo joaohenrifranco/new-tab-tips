@@ -10,7 +10,7 @@ async function fetchData() {
   return data;
 }
 
-async function handleStartup() {
+async function init() {
   const data = await fetchData();
 
   chrome.storage.local.set({ tips: data }, function() {
@@ -18,6 +18,7 @@ async function handleStartup() {
   });
 }
 
-chrome.runtime.onStartup.addListener(handleStartup);
+chrome.runtime.onInstalled.addListener(init);
+chrome.runtime.onStartup.addListener(init);
 
-handleStartup;
+init();
