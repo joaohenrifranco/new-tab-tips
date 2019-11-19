@@ -4,11 +4,11 @@
   "version": "0.1",
   "incognito": "split",
   "chrome_url_overrides": {
-    "newtab": "index.html"
+    "newtab": "src/pages/index.html"
   },
   "background": {
     "scripts": [
-      "background.js"
+      "src/scripts/background.js"
     ]
   },
   "permissions": [
