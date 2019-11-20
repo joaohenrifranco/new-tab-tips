@@ -3,7 +3,7 @@
 <head>
   <script src="./index.js"></script>
   <script src="../../lib/d3.v5.min.js"></script>
-  <title>Dicas do Descomplica</title>
+  <title>Med UERJ</title>
   <style>
     @font-face {
       font-family: Aprova;
@@ -17,71 +17,61 @@
     }
 
     body {
+      font-family: Aprova;
       background-color: #f5f5f5;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      flex-direction: column;
-      padding: 0px 20%;
+      padding: 3% 15%;
     }
 
     .header {
       font-size: 3em;
       line-height: 3em;
-      width: 100%;
-      display: inline-block;
-      vertical-align: bottom;
     }
 
     .logo {
       display: inline-block;
-      height: 2em;
-      width: 2em;
-      margin-bottom: -20px;
+      height: 1.2em;
+      width: 1.2em;
     }
 
     .main-topic {
-      font-family: Aprova;
       font-weight: bold;
     }
 
-    .sub-topic {
-      font-family: Aprova;
-    }
-
     .card {
-      padding: 40px;
-      height: 50vh;
+      display: flex;
+      padding: 40px 20px;
       width: calc(100% - 80px);
-      margin-top: 80px;
       border-radius: 4px;
       background-color: #fff;
     }
 
+    .gif-column {
+      height: 100%;
+    }
+
     .light-bulb-gif {
-      float: left;
+      margin: 0px 20px 0px 0px;
       width: 50px;
       height: 50px;
     }
 
     .tip-text {
-      font-family: Aprova;
-      margin: 0px 0px 0px 20px;
-      float: left;
+      font-size: 2em;
     }
   </style>
 </head>
 
 <body>
   <span class="header">
-    <img class="logo" src="../../assets/img/logo.png" />
-    <span class="main-topic">UERJ</span> /
-    <span class="sub-topic">Biologia</span>
+    <img class="logo" src="../../assets/img/doctor.svg" />
+
+    <span class="main-topic">UERJ</span>
+    <span class="sub-topic"></span>
   </span>
   </div>
   <div class="card">
     <img class="light-bulb-gif" src="../../assets/img/light.gif" />
-    <span class="tip-text">Falha no carregamento</span>
+    <div class="tip-text">Carregando...</div>
   </div>
 </body>
 
