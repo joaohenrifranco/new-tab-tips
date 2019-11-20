@@ -1,12 +1,16 @@
-function getRandomItem(array) {
-  return array[Math.floor(Math.random() * array.length)];
+function getRandomItem(data) {
+  return data[Math.floor(Math.random() * data.length)];
 }
 
-function handleLoad() {
-  chrome.storage.local.get(['tips'], function(result) {
-    const tipDiv = document.getElementById("tip")
-    tipDiv.innerText = getRandomItem(result.tips);
-  });
+async function handleLoad() {
+  const data = await d3.tsv("../../assets/data/data.tsv");
+  const item = getRandomItem(data);
+
+  d3.select(".tip")
+
+  const tipDiv = document.getElementById("tip")
+  console.log(item);
+  tipDiv.innerText = item.tip;
 }
 
 window.onload = handleLoad;
