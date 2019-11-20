@@ -7,12 +7,11 @@
     "newtab": "src/pages/index.html"
   },
   "background": {
-    "scripts": [
-      "src/scripts/background.js"
-    ]
+    "scripts": []
   },
   "permissions": [
     "storage"
   ],
-  "manifest_version": 2
+  "manifest_version": 2,
+  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'"
 }
