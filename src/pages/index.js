@@ -9,7 +9,6 @@ async function handleLoad() {
   d3.select(".tip")
 
   const tipDiv = document.getElementById("tip")
-  console.log(item);
   tipDiv.innerText = item.tip;
 }
 
